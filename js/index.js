@@ -11,20 +11,17 @@ function aceptarSolicitud(boton) {
     cantidadSolicitudes--;
     cantidadSolicitudesElemento.innerText = cantidadSolicitudes;
 
-    // Incrementar la cantidad de conexiones
+    //Para aumentar la cantidad de conexiones
     let cantidadConexionesElemento = document.querySelector('.conexiones-cantidad .num-conexiones');
-    let cantidadConexiones = parseInt(cantidadConexionesElemento.innerText);
+    let cantidadConexiones = Number(cantidadConexionesElemento.innerText);
     cantidadConexiones++;
     cantidadConexionesElemento.innerText = cantidadConexiones;
 }
 
 // Funcion Rechazar
-
 function rechazarSolicitud(boton) {
     
     let solicitud = boton.parentNode;
-
-   
     solicitud.remove();
 
     let cantidadSolicitudesElemento = document.querySelector('.solicitudes-cantidad .cantidad');
