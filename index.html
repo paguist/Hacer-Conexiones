@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Profile Page</title>
+</head>
+
+<body>
+    <!-- barra de navegacion -->
+    <header>
+        <nav class="nav">
+            <h1 class="nav-title">Profile</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Conections</a></li>
+                <li><button class="btn">Sign Out</button></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- tarjeta de perfil -->
+    <div id="main">
+        <div id="columna-izq">
+            <section class="perfil">
+                <div class="nombre">
+                    <img src="css/images/jane-m.jpg" alt="foto-de-perfil" class="mi-foto-de-perfil">
+                    <h1 class="nombre1">Jane Doe</h1>
+                </div>
+                <div class="residencia">
+                    <img src="css/images/map-marker.png" alt="icono-de-ubicación" class="icono-de-ubicacion">
+                    <p class="residencia-1">Seattle</p>
+                </div>
+                <div class="habilidades">
+                    <ul class="habilidades-1">
+                        <li>Developer</li>
+                        <li>Engineer</li>
+                        <li>Problem Solver</li>
+                    </ul>
+                    <p class="habilidades-2">Master of shadows and the Internet!</p>
+                </div>
+                <div class="editar-perfil">
+                    <img src="css/icons/gear.png" alt="icono de configuración" class="icono-de-configuracion">
+                    <p class="editar-perfil-1" onclick="cambiarNombre()" >edit profile</p>
+                </div>
+            </section>
+            <!-- tarjeta de perfil -->
+            <!--inicio tarjeta educacion-->
+            <section class="educacion">
+                <h2 class="educacion-titulo">Education</h2>
+                <ul id="educacion-listado">
+                    <li class="educacion-cursos">Coding Dojo - Full Stack Bootcamp</li>
+                    <p class="educacion-fechas">Dec 2019 - Mar 2020</p>
+                    <p class="educacion-conocimientos">Triple black belt in Python, MERN, and C#</p>
+                </ul>
+            </section>
+        </div>
+        <!--fin tarjeta educacion-->
+
+        <!--inicio solicitudes-->
+        <div id="columna-der">
+            <section class="solicitudes">
+                <div class="solicitudes-cantidad">
+                    <p class="cantidad">2</p>
+                    <p class="solicitudes-titulo">Connection Requests</p>
+                </div>
+                <div class="solicitud-1">
+                    <img src="css/images/todd-s.jpg" alt="foto-de-perfil-de-Todd" class="foto-de-perfil">
+                    <a href="#" class="link-a-perfil">Todd E</a>
+                    <img src="css/icons/accept-circle.png" alt="icono-de-aceptar" class="icon-aceptar" onclick="aceptarSolicitud(this)">
+                    <img src="css/icons/close-circle.png" alt="icono-de-rechazar" class="icon-rechazar" onclick="rechazarSolicitud(this)">
+                </div>
+                <div class="solicitud-2">
+                    <img src="css/images/phil-s.jpg" alt="foto-de-perfil-de-Phil" class="foto-de-perfil">
+                    <a href="#" class="link-a-perfil">Phil K</a>
+                    <img src="css/icons/accept-circle.png" alt="icono-de-aceptar" class="icon-aceptar" onclick="aceptarSolicitud(this)">
+                    <img src="css/icons/close-circle.png" alt="icono-de-rechazar" class="icon-rechazar" onclick="rechazarSolicitud(this)">
+                </div>
+            </section>
+            <!--fin solicitudes-->
+            <!-- inicio conexiones-->
+            <section class="conexiones">
+                <div class="conexiones-cantidad">
+                    <p class="cantidad-de-conexiones"><span class="num-conexiones">500</span>+</p>
+                    <p class="conexiones-titulo">Your Conections</p>
+                </div>
+                <div class="conectar-1">
+                    <img src="css/images/adrien-s.jpg" alt="foto-de-perfil-de-Adrien" class="foto-de-perfil">
+                    <a href="#" class="link-a-perfil">Adrien D</a>
+                </div>
+                <div class="conectar-2">
+                    <img src="css/images/anne-s.jpg" alt="foto-de-perfil-de-Anne" class="foto-de-perfil">
+                    <a href="#" class="link-a-perfil">Anne J</a>
+                </div>
+                <div class="conectar-3">
+                    <img src="css/images/alayne-s.jpg" alt="foto-de-perfil-de-Alayne" class="foto-de-perfil">
+                    <a href="#" class="link-a-perfil">Alaine T</a>
+                </div>
+                <div class="conectar-4">
+                    <img src="css/images/arry-s.jpg" alt="foto-de-perfil-de-Arry" class="foto-de-perfil">
+                    <a href="#" class="link-a-perfil">Arry Y</a>
+                </div>
+                <div class="conexiones-pie">
+                    <a href="#" class="ver-mas">View More</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--fin conexiones-->
+
+
+<script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
+#columna-izq {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#columna-der {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*Estilos barra de navegacion */
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2f4f4f;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.nav-title {
+    margin: 0px;
+    color: antiquewhite;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.nav-links a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.btn {
+    border: 2px solid black;
+    box-shadow: 3px 3px 1px black;
+    color: antiquewhite;
+    background-color: rgb(0, 81, 255);
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* Estilos de Perfil */
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 390px;
+    background: linear-gradient(to top, #d9e5e7 75%, #055a5a 50%);
+    margin: 10px;
+    border: 1px solid #055a5a;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.nombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.mi-foto-de-perfil {
+    height: 100px;
+    width: 100px;
+    padding-top: 10px;
+    border-radius: 50px;
+}
+
+.residencia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.icono-de-ubicacion {
+    height: 15px;
+    width: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.residencia-1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.habilidades-1 {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.habilidades-2 {
+    margin: 0;
+    padding: 0;
+}
+
+.editar-perfil {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+
+.icono-de-configuracion {
+    height: 12px;
+    width: 12px;
+}
+
+.editar-perfil-1 {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Estilos Tarjeta de Educacion */
+.educacion {
+    background-color: #d9e5e7;
+    width: 400px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid #055a5a;
+    border-radius: 5px;
+}
+
+.educacion-titulo {
+    background-color: #055a5a;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+}
+
+#educacion-listado {
+    list-style: none;
+    margin: 10px;
+
+}
+
+.educacion-cursos {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.educacion-fechas,
+.educacion-conocimientos {
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.educacion-fechas {
+    color: #314141;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* Estilos Solicitudes */
+.solicitudes {
+    background-color: #d9e5e7;
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid #055a5a;
+    border-radius: 10px;
+}
+
+.solicitudes-cantidad {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5px;
+    margin: 0;
+    background-color: #055a5a;
+    border-radius: 5px;
+}
+
+.cantidad {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+    font-size: 20px;
+    font-weight: 150;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.solicitudes-titulo {
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solicitud-1,
+.solicitud-2 {
+    margin: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.icon-aceptar, .icon-rechazar {
+    height: 20px;
+    margin: 5px;
+}
+
+.foto-de-perfil {
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+}
+
+.link-a-perfil {
+    color: #055a5a;
+    font-size: 15px;
+    margin: 5px;
+    font-weight: 800;
+}
+
+
+/* Estilos Conexiones */
+
+.conexiones {
+    background-color: #d9e5e7;
+    width: 250px;
+    height: 260px;
+    margin-left: 10px;
+    border: 1px solid #055a5a;
+    border-radius: 10px;
+}
+
+.conexiones-cantidad {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5px;
+    margin: 0;
+    background-color: #055a5a;
+    border-radius: 5px;
+}
+
+.cantidad-de-conexiones {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.conexiones-titulo {
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conectar-1,
+.conectar-2,
+.conectar-3,
+.conectar-4 {
+    margin: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* .foto-de-perfil{ Ya esta en el estilo de solicitudes
+    height: 35px;
+    width: 35px; 
+    border-radius: 50px;
+} */
+
+.link-a-perfil {
+    text-decoration: underline;
+    color: #055a5a;
+    font-size: 18px;
+    margin: 5px;
+    font-weight: 500;
+}
+
+.ver-mas {
+    font-size: 15px;
+    display: flex;
+    align-self: center;
+    margin: 0px;
+    padding-left: 20px;
+    padding-top: 3px;
+    text-decoration: underline;
+    color: #055a5a;
+    border-top: 1px solid #055a5a;
+    border-radius: 5px;
+}
